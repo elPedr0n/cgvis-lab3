@@ -25,7 +25,8 @@
 >
 > - Indique abaixo onde está, dentro deste repositório, o código-fonte usado para gerar a visualização. -->
 
-- **Arquivo principal**: <mark>`<preencher>`</mark>
+- **Arquivo principal**: [Plots](Visualization_lab3.ipynb)
+> OBS: Esse arquivo contém vários plots, além do último gerado para a visualização neste relatório.
 
 
 ## Imagem da visualização gerada
@@ -36,7 +37,7 @@
 > - Se você criou alguma visualização interativa, então descreva aqui como acessá-la. Por exemplo, se for uma página HTML, coloque o link, ou se for uma visualização 3D, descreva como compilar e executar o código.  -->
 
 
-![Visualização resultante](dashboard_final.png)
+![Visualização resultante](dashboard_completo.png)
 
 ## Descrição da visualização
 
@@ -47,7 +48,7 @@
 > - Escreva um texto curto explicando como interpretar a visualização. Descreva os elementos visuais, eixos, cores, símbolos ou interações relevantes.
 > - Este texto seria a legenda (*caption*) que acompanharia a figura em uma publicação, por exemplo. -->
 
-O dashboard construido tem como finalidade verificar a diversidade dos jogos lancados pelas marcas com maiores vendas presentes no dataset entre os anos de 2000 e 2015. Usei esse intervalo de tempo pois, apos uma analise, foi o que demonstrou um maior numero de jogos lancados deste dataset. Comecemos explicando os graficos de barras da coluna da esquerda. O primeiro, temos as 5 marcas utilizadas nesse estudo, com seus respectivos numeros de vendas totais. Logo abaixo, elencamos os 10 generos com maiores vendas, a fim de montarmos uma base de conhecimento para entender o grafico da segunda coluna. Para este escolhi um heatmap, visto que, dos graficos vistos em aula, pareceu a melhor escolha para visualizar concentracoes em diferentes generos. Foram escolhidas, para todos os graficos, cores contrastantes, a fim de nao causar dificuldades para visualizacao.
+Temos vários gráficos nesse dashboard. Primeiro temos o gráfico de linhas "Vendas Globais (milhões)", em que temos, nesse intervalo de tempo (eixo X) os gêneros mais vendidos, sendo usado o critério de Vendas Globais (eixo Y). Abaixo dele temos 2 gráficos de barras. O primeiro, "Top 5 empresas mais sucedidas", ordena as 5 maiores empresas, ordenadas de forma decrescente de vendas globais (em milhões). Ao lado, "Lançamentos por gênero" informa o número de lançamentos agrupados por gênero, ordenados também de forma decrescente. Por último temos 5 mapas de calor, cada um diz respeito a uma das empresas mais sucedidas. As cores indicam a quantidade de lucro total (em milhões), separados em um grid com o ano (eixo X) pelo gênero que gerou aquela receita (eixo Y).
 
 ### Conclusão demonstrada pela visualização
 <!-- 
@@ -56,4 +57,6 @@ O dashboard construido tem como finalidade verificar a diversidade dos jogos lan
 > - Escreva uma conclusão curta sobre os dados com base na visualização.
 > - Explique qual insight, padrão ou tendência pode ser observado. -->
 
-<mark>`<preencher>`</mark>
+Com esse dashboard, podemos concluir algumas estratégias dessas empresas. Peguemos a Activision como exemplo. No início dos anos 2000, para esse dataset, as vendas não iam tão bem. Entretanto, conforme jogos de ação foram se popularizando (2008 - 2010), percebeu-se uma alavancagem em sua receita em um nível capaz de mantê-la como terceiro maior lucro adquirido. Dado esse sucesso, continuou fazendo aquilo que deu certo, jogos de ação, tendo pequenas variações em alguns outros gêneros. 
+
+Podemos ainda falar sobre a dominância do mercado de jogos de esporte por parte da EA (Eletronic Arts). Ao longo de todo período observado, manteve quase que constante uma linha escura no gênero. Esse comportamento não foi muito observado par a Sony. Seu mapa de calor tem valores claros mais espalhados, o que nos informa que lançou diversos jogos de diferentes gêneros.
